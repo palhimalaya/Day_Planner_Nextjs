@@ -35,7 +35,7 @@ export default function Home() {
     setTime("");
   };
   const setData = () => {
-    setEntry(JSON.parse(localStorage.getItem("entries")));
+    setEntry(JSON.parse(localStorage.getItem("entries")) || []);
   };
 
   //set entries to cookie
