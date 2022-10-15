@@ -34,6 +34,7 @@ export default function Home() {
     setEvents("");
     setTime("");
   };
+  //setting data to local but not working so added empty array
   const setData = () => {
     setEntry(JSON.parse(localStorage.getItem("entries")) || []);
   };
